@@ -1,6 +1,6 @@
 {
   "name": "apollo-plugin-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "author": "zhangxiaoyu06 <zhangxiaoyu06@corp.netease.com>",
   "license": "MIT",
