@@ -62,7 +62,7 @@ const paramMap = {
       name: "id",
       in: "query",
       jsonSchema: {
-        type: "string",
+        type: "long",
         format: "",
         isLeaf: true
       }
@@ -73,7 +73,7 @@ const paramMap = {
       name: "id",
       in: "query",
       jsonSchema: {
-        type: "float",
+        type: "long",
         format: "",
         isLeaf: true
       }

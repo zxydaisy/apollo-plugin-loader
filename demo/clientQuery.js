@@ -27,32 +27,39 @@ require('yargs')
 					'./graph1.js'
 				);
 
-				console.info('data', data);
+				console.info('data1', data);
 
-				await TransforClientQuery(json2,
+				const data2 = await TransforClientQuery(json2,
 					'/Users/daisy/wy/cloud-admin-template/src/global/apollo/test',
 					'./graph2.js'
 				);
+				console.info('data2', data2);
 
-				await TransforClientQuery(json3,
+				const data3 = await TransforClientQuery(json3,
 					'/Users/daisy/wy/cloud-admin-template/src/global/apollo/test',
 					'./graph3.js'
 				);
 
-				await TransforClientQuery(json4,
+				console.info('data3', data3);
+
+				const data4 = await TransforClientQuery(json4,
 					'/Users/daisy/wy/cloud-admin-template/src/global/apollo/test',
 					'./graph4.js'
 				);
+				console.info('data4', data4);
 
-				await TransforClientQuery(json5,
+				const data5 = await TransforClientQuery(json5,
 					'/Users/daisy/wy/cloud-admin-template/src/global/apollo/test',
 					'./graph5.js'
 				);
+				console.info('data5', data5);
 
-				await TransforClientQuery(json6,
+				const data6 = await TransforClientQuery(json6,
 					'/Users/daisy/wy/cloud-admin-template/src/global/apollo/test',
 					'./graph6.js'
 				);
+
+				console.info('data6', data6);
 
 			} catch (err) {
 				console.error(err);

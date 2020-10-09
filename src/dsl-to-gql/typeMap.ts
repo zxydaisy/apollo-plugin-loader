@@ -29,12 +29,21 @@ export type GraphQLType = GraphQLOutputType | GraphQLInputType;
 export interface GraphQLTypeMap {
   [typeName: string]: GraphQLType;
 }
+
+const GraphQLLong = new GraphQLScalarType({
+  name: "Long",
+  serialize(value) {
+    return value;
+  }
+});
+
 const primitiveTypes = {
   string: GraphQLString,
   date: GraphQLString,
   integer: GraphQLInt,
   number: GraphQLFloat,
-  boolean: GraphQLBoolean
+  boolean: GraphQLBoolean,
+  long: GraphQLLong,
 };
 
 const jsonType = new GraphQLScalarType({
