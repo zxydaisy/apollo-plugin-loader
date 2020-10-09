@@ -280,8 +280,9 @@ export const getAllInterfaces = (schema: any = {}) => {
    * getAll, get, count, create, update, delete
    */
   // ["POST", "PUT", "PATCH", "DELETE"].indexOf(method) !== -1;
-  const operationName = schema.resolverName || schema.operationName;
-  const actionKey = getActionKey(operationName);
+  const operationName = schema.operationName || schema.resolverName; 
+  const resolverName = schema.resolverName;
+  const actionKey = getActionKey(resolverName);
   const isMutation = ["CREATE", "UPDATE", "DELETE"].indexOf(actionKey) !== -1;
   // 使用预设置的参数
   const schemaParams = paramMap[actionKey];
